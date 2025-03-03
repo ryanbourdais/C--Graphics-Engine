@@ -8,7 +8,7 @@ using OpenTK.Mathematics;
 namespace OpenGLEngine;
 public class Shader
 {
-    int Handle;
+    public int Handle;
 
     public Shader(string vertexPath, string fragmentPath)
     {

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OpenGLEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f91f442fd66e25594b5a88dc4e668a38f7ef22a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b7352bee3be0a36be75a306b4070623d8b88362")]
 [assembly: System.Reflection.AssemblyProductAttribute("OpenGLEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OpenGLEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

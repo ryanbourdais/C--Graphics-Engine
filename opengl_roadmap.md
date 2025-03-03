@@ -23,34 +23,41 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 ## Phase 2: Basic Rendering (2-3 weeks)
 
 ### Week 3: Element Buffer Objects and Basic Transformations
-- [ ] Task 1: Implement Element Buffer Objects (EBOs)
-- [ ] Task 2: Create a square/rectangle using indices
-- [ ] Task 3: Add basic transformations to shaders (rotation, scaling)
-- [ ] Task 4: Implement a simple animation using transformations
-- [ ] Task 5: Add color attributes to vertices
+- [X] Task 1: Implement Element Buffer Objects (EBOs)
+- [X] Task 2: Create a square/rectangle using indices
+- [X] Task 3: Add basic transformations to shaders (rotation, scaling)
+- [X] Task 4: Implement a simple animation using transformations
+- [X] Task 5: Add color attributes to vertices
 
-### Week 4: Geometry and Transformations
+### Week 4: Geometry and Basic Textures
 - [ ] Task 1: Implement a simple Mesh class
-- [ ] Task 2: Create utility methods for basic shapes (cube, sphere)
-- [ ] Task 3: Implement model matrix transformations
-- [ ] Task 4: Add rotation, scaling, and translation methods
-- [ ] Task 5: Render multiple objects with different transformations
+- [ ] Task 2: Create utility methods for basic shapes (cube, square)
+- [ ] Task 3: Implement texture coordinates
+- [ ] Task 4: Create a basic Texture class
+- [ ] Task 5: Apply a simple texture to objects
 
-### Week 5: Camera System
+### Week 5: Transformations and Multiple Objects
+- [ ] Task 1: Implement model matrix transformations
+- [ ] Task 2: Add rotation, scaling, and translation methods
+- [ ] Task 3: Create a transform hierarchy system
+- [ ] Task 4: Render multiple objects with different transformations
+- [ ] Task 5: Implement basic scene management
+
+### Week 6: Camera System
 - [ ] Task 1: Create a Camera base class
 - [ ] Task 2: Implement view matrix calculation
 - [ ] Task 3: Implement perspective projection
 - [ ] Task 4: Add camera movement (WASD + mouse)
 - [ ] Task 5: Implement a simple camera controller
 
-### Week 6: Shader Enhancements and Textures
+### Week 7: Shader Enhancements and Textures
 - [ ] Task 1: Enhance Shader class with uniform methods
 - [ ] Task 2: Implement texture coordinates
 - [ ] Task 3: Create a Texture class for loading images
 - [ ] Task 4: Apply textures to objects
 - [ ] Task 5: Implement multiple textures on a single object
 
-### Week 7: Advanced Shader Management
+### Week 8: Advanced Shader Management
 - [ ] Task 1: Create a ShaderProgram class with extended functionality
 - [ ] Task 2: Implement comprehensive shader error checking
 - [ ] Task 3: Add uniform setting methods for all types
@@ -58,13 +65,6 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 - [ ] Task 5: Implement shader hot-reloading for development
 
 ## Phase 3: Textures and Materials (2-3 weeks)
-
-### Week 8: Texture Loading
-- [ ] Task 1: Add StbImageSharp via NuGet for image loading
-- [ ] Task 2: Create a Texture class
-- [ ] Task 3: Implement texture loading from files
-- [ ] Task 4: Add texture parameter settings (filtering, wrapping)
-- [ ] Task 5: Update shaders to support textures
 
 ### Week 9: Materials
 - [ ] Task 1: Create a Material class
