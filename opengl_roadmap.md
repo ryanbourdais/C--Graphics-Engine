@@ -4,14 +4,14 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 
 ## Phase 1: Setup and First Triangle (1-2 weeks)
 
-### Week 1: Environment Setup
+### Week 1: Environment Setup ✅ COMPLETED
 - [X] Task 1: Install Visual Studio and required extensions
 - [X] Task 2: Create a new C# project
 - [X] Task 3: Install OpenTK via NuGet Package Manager
 - [X] Task 4: Create a basic window class that inherits from GameWindow
 - [X] Task 5: Implement window creation and run loop
 
-### Week 2: Your First Triangle
+### Week 2: Your First Triangle ✅ COMPLETED
 - [X] Task 1: Create basic vertex and fragment shader files
 - [X] Task 2: Implement shader loading and compilation
 - [X] Task 3: Create triangle vertex data
@@ -22,24 +22,29 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 
 ## Phase 2: Basic Rendering (2-3 weeks)
 
-### Week 3: Element Buffer Objects and Basic Transformations
+### Week 3: Element Buffer Objects and Basic Transformations ✅ COMPLETED
 - [X] Task 1: Implement Element Buffer Objects (EBOs)
 - [X] Task 2: Create a square/rectangle using indices
 - [X] Task 3: Add basic transformations to shaders (rotation, scaling)
 - [X] Task 4: Implement a simple animation using transformations
 - [X] Task 5: Add color attributes to vertices
 
-### Week 4: Geometry and Basic Textures
-- [ ] Task 1: Implement a simple Mesh class
-- [ ] Task 2: Create utility methods for basic shapes (cube, square)
-- [ ] Task 3: Implement texture coordinates
-- [ ] Task 4: Create a basic Texture class
-- [ ] Task 5: Apply a simple texture to objects
+### Week 4: Geometry and Basic Textures ✅ COMPLETED
+- [X] Task 1: Implement a simple Mesh class
+- [X] Task 2: Create utility methods for basic shapes (cube, square)
+- [X] Task 3: Implement texture coordinates
+- [X] Task 4: Create a basic Texture class
+- [X] Task 5: Apply a simple texture to objects
 
-### Week 5: Transformations and Multiple Objects
-- [ ] Task 1: Implement model matrix transformations
-- [ ] Task 2: Add rotation, scaling, and translation methods
-- [ ] Task 3: Create a transform hierarchy system
+### Week 4.5: Texture Integration ✅ COMPLETED
+- [X] Task 1: Create a TexturedMesh factory method
+- [X] Task 2: Add texture parameters to shape creation methods
+- [X] Task 3: Create a demo scene with multiple textured objects
+
+### Week 5: Transformations and Multiple Objects 🔄 CURRENT FOCUS
+- [X] Task 1: Implement model matrix transformations
+- [X] Task 2: Add rotation, scaling, and translation methods
+- [X] Task 3: Create a transform hierarchy system
 - [ ] Task 4: Render multiple objects with different transformations
 - [ ] Task 5: Implement basic scene management
 
@@ -50,21 +55,21 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 - [ ] Task 4: Add camera movement (WASD + mouse)
 - [ ] Task 5: Implement a simple camera controller
 
-### Week 7: Shader Enhancements and Textures
+### Week 7: Shader Enhancements
 - [ ] Task 1: Enhance Shader class with uniform methods
-- [ ] Task 2: Implement texture coordinates
-- [ ] Task 3: Create a Texture class for loading images
-- [ ] Task 4: Apply textures to objects
-- [ ] Task 5: Implement multiple textures on a single object
+- [ ] Task 2: Implement shader hot-reloading for development
+- [ ] Task 3: Create shader variants for different rendering modes
+- [ ] Task 4: Add support for multiple shader programs
+- [ ] Task 5: Implement a shader manager
 
-### Week 8: Advanced Shader Management
-- [ ] Task 1: Create a ShaderProgram class with extended functionality
-- [ ] Task 2: Implement comprehensive shader error checking
-- [ ] Task 3: Add uniform setting methods for all types
-- [ ] Task 4: Create a shader manager to handle multiple shaders
-- [ ] Task 5: Implement shader hot-reloading for development
+### Week 8: Advanced Texture Techniques
+- [ ] Task 1: Implement multiple textures on a single object
+- [ ] Task 2: Add texture filtering and wrapping options
+- [ ] Task 3: Implement texture atlases for sprite rendering
+- [ ] Task 4: Add support for cubemaps
+- [ ] Task 5: Create a texture manager to handle multiple textures
 
-## Phase 3: Textures and Materials (2-3 weeks)
+## Phase 3: Materials and Lighting (2-3 weeks)
 
 ### Week 9: Materials
 - [ ] Task 1: Create a Material class
@@ -79,8 +84,6 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 - [ ] Task 3: Add caching for shaders
 - [ ] Task 4: Implement proper resource disposal
 - [ ] Task 5: Add asynchronous resource loading
-
-## Phase 4: Lighting (2-3 weeks)
 
 ### Week 11: Basic Lighting
 - [ ] Task 1: Implement ambient lighting
@@ -103,7 +106,7 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 - [ ] Task 4: Implement shadow filtering techniques
 - [ ] Task 5: Add cascaded shadow maps for directional lights
 
-## Phase 5: Scene Management (2-3 weeks)
+## Phase 4: Scene Management (2-3 weeks)
 
 ### Week 14: Scene Graph
 - [ ] Task 1: Create a SceneNode class
@@ -126,7 +129,7 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 - [ ] Task 4: Add render state sorting
 - [ ] Task 5: Implement instanced rendering for similar objects
 
-## Phase 6: Advanced Features (3-4 weeks)
+## Phase 5: Advanced Features (3-4 weeks)
 
 ### Week 17: Post-Processing
 - [ ] Task 1: Implement framebuffer objects

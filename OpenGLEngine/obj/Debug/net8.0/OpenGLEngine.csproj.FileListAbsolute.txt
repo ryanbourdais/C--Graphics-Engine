@@ -30,3 +30,4 @@ C:\Users\Bourdais\source\repos\C#-Graphics-Engine\OpenGLEngine\obj\Debug\net8.0\
 C:\Users\Bourdais\source\repos\C#-Graphics-Engine\OpenGLEngine\obj\Debug\net8.0\OpenGLEngine.pdb
 C:\Users\Bourdais\source\repos\C#-Graphics-Engine\OpenGLEngine\obj\Debug\net8.0\OpenGLEngine.genruntimeconfig.cache
 C:\Users\Bourdais\source\repos\C#-Graphics-Engine\OpenGLEngine\obj\Debug\net8.0\ref\OpenGLEngine.dll
+C:\Users\Bourdais\source\repos\C#-Graphics-Engine\OpenGLEngine\bin\Debug\net8.0\StbImageSharp.dll

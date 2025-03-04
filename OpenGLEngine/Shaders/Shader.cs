@@ -64,7 +64,21 @@ public class Shader
     {
         GL.UseProgram(Handle);
     }
+    public void SetInt(string name, int value)
+    {
+        GL.UseProgram(Handle);
+        GL.Uniform1(GL.GetUniformLocation(Handle, name), value);
+    }
 
+    public void SetMatrix4(string name, Matrix4 matrix)
+    {
+        GL.UseProgram(Handle);
+        int location = GL.GetUniformLocation(Handle, name);
+        if(location != -1)
+        {
+            GL.UniformMatrix4(location, false, ref matrix);
+        }
+    }
     private bool disposedValue = false;
 
     protected virtual void Dispose(bool disposing)
