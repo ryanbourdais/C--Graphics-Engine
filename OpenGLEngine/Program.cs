@@ -1,4 +1,4 @@
-﻿using OpenGLEngine;
+﻿using OpenGLEngine.Sandboxes;
 
 namespace OpenGLEngine
 {    
@@ -6,7 +6,7 @@ namespace OpenGLEngine
     {
         static void Main(string[] args)
         {
-            using (Game game = new Game(800, 600, "OpenGLEngine"))
+            using (SceneManagerSandbox game = new SceneManagerSandbox(800, 600, "OpenGLEngine"))
             {
                 game.Run();
             }

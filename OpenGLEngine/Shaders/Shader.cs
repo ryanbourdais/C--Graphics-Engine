@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using OpenTK.Graphics.OpenGL4;
 using OpenTK.Mathematics;
 
-namespace OpenGLEngine;
+namespace OpenGLEngine.Shaders;
 public class Shader
 {
     public int Handle;

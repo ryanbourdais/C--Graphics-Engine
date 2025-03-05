@@ -5,6 +5,7 @@ using OpenTK.Windowing.Desktop;
 using OpenGLEngine.Resources;
 using OpenGLEngine.Structs;
 using System.IO;
+using OpenGLEngine.Shaders;
 
 namespace OpenGLEngine.Sandboxes
 {

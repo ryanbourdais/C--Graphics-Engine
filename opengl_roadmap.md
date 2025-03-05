@@ -45,8 +45,8 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 - [X] Task 1: Implement model matrix transformations
 - [X] Task 2: Add rotation, scaling, and translation methods
 - [X] Task 3: Create a transform hierarchy system
-- [ ] Task 4: Render multiple objects with different transformations
-- [ ] Task 5: Implement basic scene management
+- [X] Task 4: Render multiple objects with different transformations
+- [X] Task 5: Implement basic scene management
 
 ### Week 6: Camera System
 - [ ] Task 1: Create a Camera base class

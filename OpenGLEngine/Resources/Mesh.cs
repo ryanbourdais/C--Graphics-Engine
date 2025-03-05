@@ -4,6 +4,7 @@ using System;
 using System.Runtime.InteropServices;
 using OpenGLEngine;
 using OpenGLEngine.Structs;
+using OpenGLEngine.Shaders;
 
 namespace OpenGLEngine.Resources
 {

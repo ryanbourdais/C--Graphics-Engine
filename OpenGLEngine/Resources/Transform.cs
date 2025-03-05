@@ -28,6 +28,7 @@ namespace OpenGLEngine.Resources
         }
 
         public Transform? Parent { get; private set; }
+        public GameObject? Owner { get; internal set;}
         public List<Transform> Children { get; } = new List<Transform>();
 
         public Transform()

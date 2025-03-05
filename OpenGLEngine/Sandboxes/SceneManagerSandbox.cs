@@ -7,11 +7,11 @@ using OpenGLEngine.Structs;
 using System.IO;
 using OpenGLEngine.Shaders;
 
-namespace OpenGLEngine
+namespace OpenGLEngine.Sandboxes    
 {
-    public class Game : GameWindow
+    public class SceneManagerSandbox : GameWindow
     {
-        public Game(int width, int height, string title) : base(
+        public SceneManagerSandbox(int width, int height, string title) : base(
         GameWindowSettings.Default,
         new NativeWindowSettings
         {
