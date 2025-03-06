@@ -41,7 +41,7 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 - [X] Task 2: Add texture parameters to shape creation methods
 - [X] Task 3: Create a demo scene with multiple textured objects
 
-### Week 5: Transformations and Multiple Objects 🔄 CURRENT FOCUS
+### Week 5: Transformations and Multiple Objects ✅ COMPLETED
 - [X] Task 1: Implement model matrix transformations
 - [X] Task 2: Add rotation, scaling, and translation methods
 - [X] Task 3: Create a transform hierarchy system
@@ -49,11 +49,11 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 - [X] Task 5: Implement basic scene management
 
 ### Week 6: Camera System
-- [ ] Task 1: Create a Camera base class
-- [ ] Task 2: Implement view matrix calculation
-- [ ] Task 3: Implement perspective projection
-- [ ] Task 4: Add camera movement (WASD + mouse)
-- [ ] Task 5: Implement a simple camera controller
+- [X] Task 1: Create a Camera base class
+- [X] Task 2: Implement view matrix calculation
+- [X] Task 3: Implement perspective projection
+- [X] Task 4: Add camera movement (WASD + mouse)
+- [X] Task 5: Implement a simple camera controller
 
 ### Week 7: Shader Enhancements
 - [ ] Task 1: Enhance Shader class with uniform methods
@@ -68,6 +68,13 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 - [ ] Task 3: Implement texture atlases for sprite rendering
 - [ ] Task 4: Add support for cubemaps
 - [ ] Task 5: Create a texture manager to handle multiple textures
+
+### Week 8.5: Component System
+- [ ] Task 1: Design a Component base class
+- [ ] Task 2: Modify GameObject to support multiple components
+- [ ] Task 3: Implement common components (Renderer, Collider, etc.)
+- [ ] Task 4: Add component lifecycle methods (Start, Update, etc.)
+- [ ] Task 5: Create a demo scene with component-based objects
 
 ## Phase 3: Materials and Lighting (2-3 weeks)
 
@@ -84,6 +91,13 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 - [ ] Task 3: Add caching for shaders
 - [ ] Task 4: Implement proper resource disposal
 - [ ] Task 5: Add asynchronous resource loading
+
+### Week 10.5: Prefab System
+- [ ] Task 1: Design a Prefab class to template GameObjects
+- [ ] Task 2: Implement prefab instantiation
+- [ ] Task 3: Add prefab modification tracking
+- [ ] Task 4: Create a prefab editor utility
+- [ ] Task 5: Build a prefab library for common objects
 
 ### Week 11: Basic Lighting
 - [ ] Task 1: Implement ambient lighting
@@ -115,12 +129,26 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 - [ ] Task 4: Create a Scene class
 - [ ] Task 5: Implement scene traversal for rendering
 
+### Week 14.5: Scene Manager
+- [ ] Task 1: Create a SceneManager class
+- [ ] Task 2: Implement scene loading and unloading
+- [ ] Task 3: Add scene transitions and effects
+- [ ] Task 4: Implement persistent objects between scenes
+- [ ] Task 5: Create a scene dependency system
+
 ### Week 15: Model Loading
 - [ ] Task 1: Add AssimpNet via NuGet
 - [ ] Task 2: Create a ModelLoader class
 - [ ] Task 3: Implement OBJ file loading
 - [ ] Task 4: Add material and texture loading from models
 - [ ] Task 5: Integrate models with the scene graph
+
+### Week 15.5: Serialization
+- [ ] Task 1: Design a serialization system for game objects
+- [ ] Task 2: Implement scene saving to file
+- [ ] Task 3: Add scene loading from file
+- [ ] Task 4: Create a simple scene editor
+- [ ] Task 5: Add support for custom serialization of components
 
 ### Week 16: Culling and Optimization
 - [ ] Task 1: Implement frustum culling
@@ -161,18 +189,30 @@ This roadmap breaks down the development of a C# OpenGL graphics engine into sma
 
 ## Mini-Projects to Test Your Engine
 
-1. **Rotating Cube (After Week 5)**
+1. **Rotating Cube (After Week 5)** ✅ COMPLETED
    - Create a textured cube that rotates
    - Implement camera controls to view it from different angles
 
-2. **Solar System (After Week 8)**
-   - Create a simple solar system with planets orbiting the sun
-   - Use the scene graph for orbital mechanics
+2. **Component Demo (After Week 8.5)**
+   - Create objects with different component combinations
+   - Implement custom components with unique behaviors
 
-3. **Terrain Renderer (After Week 14)**
+3. **Prefab Library (After Week 10.5)**
+   - Build a collection of reusable game objects
+   - Create a scene by instantiating and customizing prefabs
+
+4. **Solar System (After Week 14.5)**
+   - Create a simple solar system with planets orbiting the sun
+   - Use the scene graph and scene manager for orbital mechanics
+
+5. **Scene Editor (After Week 15.5)**
+   - Create a simple tool to build and save scenes
+   - Load and modify saved scenes at runtime
+
+6. **Terrain Renderer (After Week 16)**
    - Implement heightmap-based terrain rendering
    - Add texturing based on height and slope
 
-4. **Simple Game Demo (After Week 18)**
+7. **Simple Game Demo (After Week 19)**
    - Create a small game demo showcasing your engine
    - Implement game objects, simple physics, and UI 

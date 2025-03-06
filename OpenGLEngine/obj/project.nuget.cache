@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l8rWYKkkWMI=",
+  "dgSpecHash": "11rwH8pwaYU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bourdais\\source\\repos\\C#-Graphics-Engine\\OpenGLEngine\\OpenGLEngine.csproj",
+  "projectFilePath": "C:\\Users\\Bourdais\\source\\repos\\C#-Graphics-Engine\\openglengine\\OpenGLEngine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bourdais\\.nuget\\packages\\opentk\\4.9.3\\opentk.4.9.3.nupkg.sha512",
     "C:\\Users\\Bourdais\\.nuget\\packages\\opentk.audio.openal\\4.9.3\\opentk.audio.openal.4.9.3.nupkg.sha512",

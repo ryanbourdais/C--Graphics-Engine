@@ -2,6 +2,7 @@ using OpenTK.Graphics.OpenGL4;
 using OpenTK.Mathematics;
 using OpenTK.Windowing.Common;
 using OpenTK.Windowing.Desktop;
+using OpenTK.Windowing.GraphicsLibraryFramework;
 using OpenGLEngine.Resources;
 using OpenGLEngine.Structs;
 using System.IO;
@@ -27,7 +28,8 @@ namespace OpenGLEngine
         private System.Diagnostics.Stopwatch _timer = new System.Diagnostics.Stopwatch();
         private Shader _meshShader = null!;
         private Scene _scene = new Scene();
-
+        private Camera _camera = null!;
+        private CameraController _cameraController = null!;
         protected override void OnLoad()
         {
             base.OnLoad();
@@ -35,8 +37,13 @@ namespace OpenGLEngine
             GL.ClearColor(0.2f, 0.3f, 0.3f, 1.0f);
             GL.Enable(EnableCap.DepthTest);
             
-            _meshShader = new Shader("Shaders/mesh.vert", "Shaders/mesh.frag");
+            _meshShader = new Shader("Shaders/camera.vert", "Shaders/camera.frag");
             _timer.Start();
+
+            _camera = new Camera(new Vector3(0.0f, 0.0f, 3.0f));
+            _camera.AspectRatio = (float)Size.X / Size.Y;
+            _cameraController = new CameraController(_camera);
+            CursorState = CursorState.Grabbed;
 
             _scene = new Scene();
             _scene.ActiveShader = _meshShader;
@@ -98,14 +105,10 @@ namespace OpenGLEngine
                 sphere.Transform.SetRotation(new Vector3(0, 0, time * 50));
             }
 
-            // Setup view and projection matrices
-            Matrix4 view = Matrix4.CreateTranslation(0.0f, 0.0f, -5.0f);
-            Matrix4 projection = Matrix4.CreatePerspectiveFieldOfView(
-                MathHelper.DegreesToRadians(45.0f),
-                (float)Size.X / Size.Y,
-                0.1f,
-                100.0f);
-
+            // Get view and projection matrices from camera
+            Matrix4 view = _camera.GetViewMatrix();
+            Matrix4 projection = _camera.GetProjectionMatrix();
+            
             // Set view and projection matrices in the shader
             if (_scene.ActiveShader != null)
             {
@@ -113,10 +116,10 @@ namespace OpenGLEngine
                 _scene.ActiveShader.SetMatrix4("view", view);
                 _scene.ActiveShader.SetMatrix4("projection", projection);
             }
-
+            
             // Render the scene
             _scene.Render();
-
+            
             SwapBuffers();
         }
         
@@ -124,15 +127,40 @@ namespace OpenGLEngine
         {
             base.OnUpdateFrame(e);
             
+            // Get keyboard state
+            var input = KeyboardState;
+            
+            // Exit on escape
+            if (input.IsKeyDown(Keys.Escape))
+            {
+                Close();
+            }
+            
+            // Update camera
+            _cameraController.Update(KeyboardState, (float)e.Time);
+            
             // Update the scene
             _scene.Update((float)e.Time);
         }
         
+        protected override void OnMouseMove(MouseMoveEventArgs e)
+        {
+            base.OnMouseMove(e);
+            _cameraController.OnMouseMove(e.X, e.Y);
+        }
+
+        protected override void OnMouseWheel(MouseWheelEventArgs e)
+        {
+            base.OnMouseWheel(e);
+            _cameraController.OnMouseWheel(e.OffsetY);
+        }
+
         protected override void OnResize(ResizeEventArgs e)
         {
             base.OnResize(e);
             // Update viewport when window is resized
             GL.Viewport(0, 0, Size.X, Size.Y);
+            _camera.AspectRatio = (float)Size.X / Size.Y;
         }
 
         protected override void OnUnload()

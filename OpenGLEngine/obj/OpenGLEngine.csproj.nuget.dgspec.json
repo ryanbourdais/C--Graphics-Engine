@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bourdais\\source\\repos\\C#-Graphics-Engine\\OpenGLEngine\\OpenGLEngine.csproj": {}
+    "C:\\Users\\Bourdais\\source\\repos\\C#-Graphics-Engine\\openglengine\\OpenGLEngine.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bourdais\\source\\repos\\C#-Graphics-Engine\\OpenGLEngine\\OpenGLEngine.csproj": {
+    "C:\\Users\\Bourdais\\source\\repos\\C#-Graphics-Engine\\openglengine\\OpenGLEngine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bourdais\\source\\repos\\C#-Graphics-Engine\\OpenGLEngine\\OpenGLEngine.csproj",
+        "projectUniqueName": "C:\\Users\\Bourdais\\source\\repos\\C#-Graphics-Engine\\openglengine\\OpenGLEngine.csproj",
         "projectName": "OpenGLEngine",
-        "projectPath": "C:\\Users\\Bourdais\\source\\repos\\C#-Graphics-Engine\\OpenGLEngine\\OpenGLEngine.csproj",
+        "projectPath": "C:\\Users\\Bourdais\\source\\repos\\C#-Graphics-Engine\\openglengine\\OpenGLEngine.csproj",
         "packagesPath": "C:\\Users\\Bourdais\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bourdais\\source\\repos\\C#-Graphics-Engine\\OpenGLEngine\\obj\\",
+        "outputPath": "C:\\Users\\Bourdais\\source\\repos\\C#-Graphics-Engine\\openglengine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
